@@ -9,9 +9,239 @@
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="./imagens/icon.png" type="image/x-icon">
 </head>
-
 <body>
-    
-</body>
 
+  <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Fechar</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64">FIANÇAILLES</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Galeria</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Serviços</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Depoimentos</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ritos</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right menu" onclick="w3_open()">☰</a>
+  <span>FIANÇAILLES</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Celebre seu Casamento</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Galeria</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="./imagens/picture1.jfif" style="width:100%" onclick="onClick(this)" alt="Foto de um casamento">
+      <img src="./imagens/picture7.jpg" style="width:100%" onclick="onClick(this)" alt="Alianças de casamento">
+      <img src="./imagens/picture2.jfif" style="width:100%" onclick="onClick(this)" alt="Assinando habilitação do casamento">
+    </div>
+
+    <div class="w3-half">
+      <img src="./imagens/picture4.jfif" style="width:100%" onclick="onClick(this)" alt="Altar de casamento">
+      <img src="./imagens/picture5.jpg" style="width:100%" onclick="onClick(this)" alt="Entreguando anel de noivado">
+      <img src="./imagens/picture6.jpg" style="width:100%" onclick="onClick(this)" alt="Comemorando o casamento">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Serviços</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Espero auxiliar na realização dos seus sonhos, gostaria muito de tornar incrivel o momento tão esperado por vocês</p>
+    <p>Sou celebrante de casamentos e também juiz de paz, podendo assim realizar casamentos com efeito civil ou cerimonias com algumas opções das quais você pode ler mais na seção Ritos, disponivel nesse web site. Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Depoimentos</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>"A melhor celebração possivel para um dia tão especial, recomendo de mais que conheçam o trabalho, foi bem emocionate e alguns convidados nos deram um feedback muito positivo"<br> - JUh M. dos Santos <span class="w3-small"> 06/04/2024</span></p>
+    <p> Outras avaliações feitas em meu instagram & atraves do WhatsAPP!
+    </p>
+    <p><b>Comentarios</b>:</p>
+  </div>
+
+  <!-- Feedback -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./imagens/fdb6.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Karina & Lucas</h3>
+          <p>Estamos comemorando a belissima celebração que vivenciamos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./imagens/fdb5.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Carla & Diego</h3>
+          <p>Que cerimonia incrivel, foi fera de mais, cada momento foi único.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./imagens/fdb1.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Jaqueline</h3>
+          <p>Foi brilhante, suas citações ficaram para sempre marcadas no coração de cada convidado que esteve presente.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./imagens/fdb3.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Adriana</h3>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./imagens/fdb2.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Lucas D.</h3>
+          <p>Só queria parabeniza-lo pelo exelente trabalho prestado, mais uma vez obrigado pelas suas palavras.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./imagens/fdb4.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Maria Julia</h3>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ritos -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Ritos</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Alguns tipos de celebrações que eu adoraria realizar de acordo com suas itenções e votos de casamento, além do casamento com efeito civil, entre em contato para tirar duvidas sobre curiosidades do seu interesse</p>
+  </div>
+
+  <div class="w3-row-padding quad">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Casamento Civil ou Cerimonia</li>
+        <li class="w3-padding-16">Juiz de Paz / Celebrante</li>
+        <li class="w3-padding-16">Certidão de Casamento / Citações</li>
+        <li class="w3-padding-16">Local para cerimonia / Fotografo a parte</li>
+        <li class="w3-padding-16">Suas preferencia / Escolhas do casal</li>
+        <li class="w3-padding-16">Rito Simbolico ou Religioso</li>
+        <li class="w3-padding-16">
+          <h2>R$ 869</h2>
+          <span class="w3-opacity">Dia de Serviço</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Tirar dúvidas</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Ritos Simbolicos ou Religiosos</li>
+        <li class="w3-padding-16">Ritos da Cápsula do Tempo</li>
+        <li class="w3-padding-16">Ritos do Plantio da Árvore</li>
+        <li class="w3-padding-16">Cerimônia das Bolhas</li>
+        <li class="w3-padding-16">Cerimônia dos Vinhos</li>
+        <li class="w3-padding-16">Cerimônia da Corda</li>
+        <li class="w3-padding-16">Cerimônia dos Aros</li>
+        <li class="w3-padding-16">Ritos das Areias</li>
+        <li class="w3-padding-16">Ritos das Rosas</li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Tirar dúvidas</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p class="w3-opacity">(Os preços para os serviços mencionados nesse website são valores fictícios)</p>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contato</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Nessa seção temos as informações de contato para outras perguntas & orçamentos, fique a vontade para mandar sua msg, responderemos em até 24hrs</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://wishwebdev.github.io/" title="W3.CSS" target="_blank" class="w3-hover-red">ADML.Leonardo Mesquita Dalmazzo Antunes</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
 </html>
