@@ -27,23 +27,9 @@ Facilitar o processo de contratação de um celebrante e fornecer informações 
    bash
    git clone https://github.com/seuusuario/fiancailles.git
 
-## 📂 Estrutura de Arquivos
-
-bash
-Fiançailles/
-├── index.html          # Página principal do site
-├── style.css           # Estilos customizados
-├── imagens/            # Imagens do projeto
-│   ├── icon.png
-│   ├── picture1.jfif
-│   └── ...
-└── README.md           # Documentação do projeto
-
-```
-
 ## 🖼️ Demonstração
 
-Acesse uma prévia do site aqui.
+[**Acesse uma prévia do site aqui.**](Leo-DevFullStack/fiancailles)
 
 ## ⚠️ Aviso
 
@@ -54,3 +40,15 @@ Os preços mencionados no site são fictícios e foram incluídos apenas para fi
 Este projeto é de uso aberto. Sinta-se à vontade para utilizá-lo e adaptá-lo, mas mencione a autoria original quando necessário.
 
 ## ✨ Desenvolvido e adaptado por Leonardo Mesquita Dalmazzo Antunes (ADML1999©)
+
+## 📂 Estrutura de Arquivos
+
+```bash
+Fiançailles/
+├── index.html          # Página principal do site
+├── style.css           # Estilos customizados
+├── imagens/            # Imagens do projeto
+│   ├── icon.png
+│   ├── picture1.jfif
+│   └── ...
+└── README.md           # Documentação do projeto
