@@ -39,8 +39,6 @@ Os preços mencionados no site são fictícios e foram incluídos apenas para fi
 
 Este projeto é de uso aberto. Sinta-se à vontade para utilizá-lo e adaptá-lo, mas mencione a autoria original quando necessário.
 
-## ✨ Desenvolvido e adaptado por Leonardo Mesquita Dalmazzo Antunes (ADML1999©)
-
 ## 📂 Estrutura de Arquivos
 
 ```bash
@@ -52,3 +50,5 @@ Fiançailles/
 │   ├── picture1.jfif
 │   └── ...
 └── README.md           # Documentação do projeto
+
+✨ Desenvolvido e adaptado por Leonardo Mesquita Dalmazzo Antunes (ADML1999©)
